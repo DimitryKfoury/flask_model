@@ -24,5 +24,5 @@ def predict():
 if __name__ == '__main__':
     # Load  model and data
    
-    app.run(debug=True,port=1239)
+    app.run(debug=True,port=1238)
    
