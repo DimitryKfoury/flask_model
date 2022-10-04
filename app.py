@@ -44,5 +44,5 @@ def predict_json():   # Get the data from the POST request.
 if __name__ == '__main__':
     # Load  model and data
    
-    app.run(debug=True,port=1238)
+    app.run(debug=True)
    
