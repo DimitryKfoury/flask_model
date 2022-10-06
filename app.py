@@ -32,7 +32,7 @@ def predict_json():   # Get the data from the POST request.
     client_id=request.get_json()
     #print(request.data)
     # Make prediction using model loaded from disk as per the data.
-    prediction = model.predict_proba([predict_data.loc[client_id[0],:]])
+    prediction = model.predict_proba([predict_data.loc[client_id['client_num'],:]])
     # Take the first value of prediction
     
     output=jsonify(prediction[0][0])
