@@ -5,7 +5,7 @@ import pandas as pd
 #from apiflask import APIFlask
 app = Flask(__name__)
 
-model = joblib.load(open('model.sav','rb'))
+model = joblib.load(open('Model.sav','rb'))
 predict_data=pd.read_json(r'predict_df.json')
 predict_data=predict_data.set_index('index')
 @app.route('/')
